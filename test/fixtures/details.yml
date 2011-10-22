@@ -1,0 +1,13 @@
+one:
+  name: MyString
+  email: 
+  phone: 1
+  query: MyText
+  type: MyString
+
+two:
+  name: MyString
+  email: 
+  phone: 1
+  query: MyText
+  type: MyString

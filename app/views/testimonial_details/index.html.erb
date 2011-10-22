@@ -1,0 +1,27 @@
+<% title "Testimonial Details" %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Details</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Approved</th>
+  </tr>
+  <% for testimonial_detail in @testimonial_details %>
+    <tr>
+      <td><%= testimonial_detail.title %></td>
+      <td><%= testimonial_detail.details %></td>
+      <td><%= testimonial_detail.name %></td>
+      <td><%= testimonial_detail.email %></td>
+      <td><%= testimonial_detail.phone %></td>
+      <td><%= testimonial_detail.approved %></td>
+      <td><%= link_to "Show", testimonial_detail %></td>
+      <td><%= link_to "Edit", edit_testimonial_detail_path(testimonial_detail) %></td>
+      <td><%= link_to "Destroy", testimonial_detail, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Testimonial Detail", new_testimonial_detail_path %></p>

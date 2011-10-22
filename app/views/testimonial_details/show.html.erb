@@ -1,0 +1,32 @@
+<% title "Testimonial Detail" %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @testimonial_detail.title %>
+</p>
+<p>
+  <strong>Details:</strong>
+  <%= @testimonial_detail.details %>
+</p>
+<p>
+  <strong>Name:</strong>
+  <%= @testimonial_detail.name %>
+</p>
+<p>
+  <strong>Email:</strong>
+  <%= @testimonial_detail.email %>
+</p>
+<p>
+  <strong>Phone:</strong>
+  <%= @testimonial_detail.phone %>
+</p>
+<p>
+  <strong>Approved:</strong>
+  <%= @testimonial_detail.approved %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_testimonial_detail_path(@testimonial_detail) %> |
+  <%= link_to "Destroy", @testimonial_detail, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", testimonial_details_path %>
+</p>

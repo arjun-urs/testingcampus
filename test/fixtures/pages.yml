@@ -1,0 +1,11 @@
+one:
+  name: MyString
+  title: MyString
+  details: MyText
+  order: 1
+
+two:
+  name: MyString
+  title: MyString
+  details: MyText
+  order: 1

@@ -1,0 +1,40 @@
+<% for testimonial_detail in @testimonial_details %>
+  <br/>
+  <div style="background-color: aquamarine">
+    <p>
+      <strong><%= testimonial_detail.title %></strong><br/>
+    </p>
+    <p>
+      <%= testimonial_detail.details %>
+    </p>
+    By: <%= testimonial_detail.name %><br/>
+    Email: <%= testimonial_detail.email %><br/>
+    Ph: <%= testimonial_detail.phone %>
+  </div>
+<% end %>
+
+<h2><%= "New Testimonial Detail" %></h2>
+<%= form_for @testimonial_detail do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :details %><br />
+    <%= f.text_area :details %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

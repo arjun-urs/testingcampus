@@ -1,0 +1,15 @@
+one:
+  title: MyString
+  details: MyText
+  name: MyString
+  email: MyString
+  phone: 1
+  approved: false
+
+two:
+  title: MyString
+  details: MyText
+  name: MyString
+  email: MyString
+  phone: 1
+  approved: false

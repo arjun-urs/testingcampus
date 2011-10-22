@@ -1,0 +1,28 @@
+<%= form_for @testimonial_detail do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :details %><br />
+    <%= f.text_area :details %>
+  </p>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </p>
+  <p>
+    <%= f.label :phone %><br />
+    <%= f.text_field :phone %>
+  </p>
+  <p>
+    <%= f.label :approved %><br />
+    <%= f.check_box :approved %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

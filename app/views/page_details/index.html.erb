@@ -1,0 +1,27 @@
+<% title "Page Details" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Title</th>
+    <th>Details</th>
+    <th>Order</th>
+    <th>Page</th>
+    <th>Page Type</th>
+  </tr>
+  <% for page_detail in @page_details %>
+    <tr>
+      <td><%= page_detail.name %></td>
+      <td><%= page_detail.title %></td>
+      <td><%= page_detail.details %></td>
+      <td><%= page_detail.order %></td>
+      <td><%= page_detail.page_id %></td>
+      <td><%= page_detail.page_type %></td>
+      <td><%= link_to "Show", page_detail %></td>
+      <td><%= link_to "Edit", edit_page_detail_path(page_detail) %></td>
+      <td><%= link_to "Destroy", page_detail, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Page Detail", new_page_detail_path %></p>

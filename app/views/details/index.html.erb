@@ -1,0 +1,25 @@
+<% title "Details" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Query</th>
+    <th>Type</th>
+  </tr>
+  <% for detail in @details %>
+    <tr>
+      <td><%= detail.name %></td>
+      <td><%= detail.email %></td>
+      <td><%= detail.phone %></td>
+      <td><%= detail.query %></td>
+      <td><%= detail.type %></td>
+      <td><%= link_to "Show", detail %></td>
+      <td><%= link_to "Edit", edit_detail_path(detail) %></td>
+      <td><%= link_to "Destroy", detail, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Detail", new_detail_path %></p>

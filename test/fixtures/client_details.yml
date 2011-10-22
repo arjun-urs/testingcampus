@@ -1,0 +1,15 @@
+one:
+  name: MyString
+  details: MyText
+  logo_file_name: MyString
+  logo_content_type: MyString
+  logo_file_size: 1
+  logo_updated_at: 2011-10-01 21:26:05
+
+two:
+  name: MyString
+  details: MyText
+  logo_file_name: MyString
+  logo_content_type: MyString
+  logo_file_size: 1
+  logo_updated_at: 2011-10-01 21:26:05

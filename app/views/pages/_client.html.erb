@@ -1,0 +1,31 @@
+<% for client_detail in @client_details %>
+<p>
+  <strong>Name:</strong>
+  <%= client_detail.name %>
+</p>
+<p>
+  <strong>Details:</strong>
+  <%= client_detail.details %>
+</p>
+<%= image_tag client_detail.logo.url %>
+<% end %>
+
+<h2><%= "New Client Detail" %></h2>
+
+<%= form_for @client_detail, :html => { :multipart => true } do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :details %><br />
+    <%= f.text_area :details %>
+  </p>
+  <p>
+    <%= f.label :logo %><br />
+    <%= f.file_field :logo %>
+  </p>
+
+  <p><%= f.submit %></p>
+<% end %>

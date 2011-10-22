@@ -1,0 +1,9 @@
+one:
+  name: MyString
+  details: MyText
+  order: 1
+
+two:
+  name: MyString
+  details: MyText
+  order: 1

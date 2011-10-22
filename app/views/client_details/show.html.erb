@@ -1,0 +1,19 @@
+<% title "Client Detail" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @client_detail.name %>
+</p>
+<p>
+  <strong>Details:</strong>
+  <%= @client_detail.details %>
+</p>
+<%= image_tag @client_detail.logo.url %>
+<%= image_tag @client_detail.logo.url(:medium) %>
+<%= image_tag @client_detail.logo.url(:thumb) %>
+
+<p>
+  <%= link_to "Edit", edit_client_detail_path(@client_detail) %> |
+  <%= link_to "Destroy", @client_detail, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", client_details_path %>
+</p>

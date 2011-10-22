@@ -1,0 +1,19 @@
+<% title "Client Details" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Details</th>
+  </tr>
+  <% for client_detail in @client_details %>
+    <tr>
+      <td><%= client_detail.name %></td>
+      <td><%= client_detail.details %></td>
+      <td><%= link_to "Show", client_detail %></td>
+      <td><%= link_to "Edit", edit_client_detail_path(client_detail) %></td>
+      <td><%= link_to "Destroy", client_detail, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Client Detail", new_client_detail_path %></p>

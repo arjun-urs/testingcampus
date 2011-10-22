@@ -7,4 +7,5 @@ class Page < ActiveRecord::Base
     name
   end
 
+
 end
